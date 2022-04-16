@@ -1,0 +1,42 @@
+{
+  "name": "shared-utils",
+  "version": "0.0.1",
+  "description": "Library of useful utilities to be shared across applications.",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "build": "webpack",
+    "jsdoc": "jsdoc -c ./jsdoc.conf.json",
+    "start": "webpack serve --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigmcc/shared-utils.git"
+  },
+  "keywords": [],
+  "author": "craigmcc",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/craigmcc/library/issues"
+  },
+  "homepage": "https://github.com/craigmcc/library#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "jest": "^27.5.1",
+    "jsdoc": "^3.6.10",
+    "ts-jest": "^27.1.4",
+    "typedoc": "^0.22.15",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
