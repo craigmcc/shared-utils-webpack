@@ -2,7 +2,7 @@
  * @module @craigmcc/shared-utils/Dates
  *
  * @description
- * Convenience methods that perform useful calculations with dates that are
+ * Convenience functions that perform useful calculations with dates that are
  * represented as strings (YYYY-MM-DD).  Only the toObject() and fromObject()
  * methods deal with actual JavaScript Date objects.
  */
@@ -20,22 +20,22 @@ const Dates = {
     /**
      * Return the specified date minus decrement days.
      *
-     * @param {string} date             Original date
+     * @param {string} value            Original date
      * @param {number} decrement        Number of days to decrement
      * @return {string}                 Updated date
      */
-    decrement(date: string, decrement: number): string {
-        return this.fromObject(subDays(this.toObject(date), decrement));
+    decrement(value: string, decrement: number): string {
+        return this.fromObject(subDays(this.toObject(value), decrement));
     },
 
     /**
      * Convert a Date object into the corresponding string.
      *
-     * @param {Date} date               Date object to be converted
+     * @param {Date} value              Date object to be converted
      * @return {string}                 Corresponding string object
      */
-    fromObject(date: Date): string {
-        let temp = format(date, "P");
+    fromObject(value: Date): string {
+        const temp = format(value, "P");
         return temp.substr(6, 4) + "-"
             + temp.substr(0, 2) + "-"
             + temp.substr(3, 2);
@@ -44,12 +44,12 @@ const Dates = {
     /**
      * Return the specified date plus increment days.
      *
-     * @param {string} date             Original date
+     * @param {string} value            Original date
      * @param {number} increment        Number of days to increment
      * @return {string}                 Updated date
      */
-    increment(date: string, increment: number): string {
-        return this.fromObject(addDays(this.toObject(date), increment));
+    increment(value: string, increment: number): string {
+        return this.fromObject(addDays(this.toObject(value), increment));
     },
 
     /**
@@ -64,12 +64,12 @@ const Dates = {
     /**
      * Convert a string date into the corresponding Date object.
      *
-     * @param {string} date             Date to be converted
+     * @param {string} value            Date to be converted
      * @return {Date}                   Object representation of this date.
      */
-    toObject(date: string): Date {
-        return new Date(date + " 00:00:00");
-    }
+    toObject(value: string): Date {
+        return new Date(value + " 00:00:00");
+    },
 
 }
 
