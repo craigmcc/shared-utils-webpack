@@ -14,6 +14,7 @@ module.exports = {
             },
         ],
     },
+/*
     optimization: {
         moduleIds: 'deterministic',
         runtimeChunk: 'single',
@@ -27,9 +28,10 @@ module.exports = {
             }
         }
     },
+*/
     output: {
         clean: true,
-        filename: '[name].[contenthash].js',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
