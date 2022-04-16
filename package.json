@@ -10,6 +10,7 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "build": "webpack",
+    "docs": "typedoc ./src/index.ts",
     "jsdoc": "jsdoc -c ./jsdoc.conf.json",
     "start": "webpack serve --open",
     "test": "jest --watch",
