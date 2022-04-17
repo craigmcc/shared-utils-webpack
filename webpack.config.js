@@ -43,9 +43,9 @@ module.exports = {
     plugins: [
         new CopyPlugin({
             patterns: [
-                { from: "package.json",    to: "dist/package.json" },
-                { from: "LICENSE",         to: "dist/LICENSE" },
-                { from: "README.md",       to: "dist/README.md" },
+                { from: "package.json",    to: "package.json" },
+                { from: "LICENSE",         to: "LICENSE" },
+                { from: "README.md",       to: "README.md" },
 
             ],
         }),
