@@ -1,13 +1,13 @@
 {
   "name": "@craigmcc/shared-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Library of useful utilities to be shared across applications.",
   "files": [
     "dist"
   ],
-  "types": "./index.d.ts",
-  "main": "./index.js",
-  "module": "./index.js",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "build": "webpack",
     "docs": "typedoc ./src/index.ts",
