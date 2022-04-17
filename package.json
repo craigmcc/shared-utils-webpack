@@ -1,6 +1,6 @@
 {
-  "name": "shared-utils",
-  "version": "0.0.1",
+  "name": "@craigmcc/shared-utils",
+  "version": "0.0.2",
   "description": "Library of useful utilities to be shared across applications.",
   "files": [
     "dist"
